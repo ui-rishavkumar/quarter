@@ -1,0 +1,115 @@
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+.logo{
+    width:25%;
+}
+.header-menu {
+    width: 55%;
+}
+.header-icons {
+    width: 20%;
+}
+ul.menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px 0;
+}
+ul.menu-list a {
+    text-decoration: none;
+}
+li.menu_list a {
+    color: #000;
+    font-size: 18px;
+    transition: 0.3s all;
+}
+li.menu_list a:hover {
+    color: var(--color-primary);
+}
+.header-icons {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.header-icons svg {
+    width: 20px;
+    height: 20px;
+}
+.cart-wrap svg {
+    width: 23px;
+    height: 23px;
+}
+.icon {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.3s ease;
+}
+.icon:hover .h--icons svg {
+    fill: #fff;
+}
+.icon:hover .h--icons svg path {
+    fill: #fff;
+}
+.icon:hover {
+    background: var(--color-primary);
+}
+.mob-toggle {
+    display: none;
+}
+
+@media screen and (min-width:990px){
+    .sticky--header {
+        background-color: #fff;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 10px 50px 0 rgba(46, 56, 220, 0.2);
+        transition: 0.3s ease-in-out;
+    }
+}
+@media screen and (max-width:990px){
+    .header-menu {
+        display: none;
+    }
+    .mob-toggle {
+        display: block;
+    }
+    .header-icons {
+        width: 50%;
+    }    
+
+    
+}
+@media screen and (max-width:749px){
+    .main-header {
+        padding: 32px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }   
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .header-icons {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

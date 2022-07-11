@@ -1,0 +1,54 @@
+.dropDownFind_container {
+    background: #fff;
+}
+.dropDownFind_container .container {
+    transform: translateY(-50%);
+    position: relative;
+    padding: 50px 0;
+    background: #fff;
+ 
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+}
+.drop-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+.drop__select {
+    width: 25%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-color: #eee;
+    background: transparent;
+}
+@media screen and (max-width:990px){
+    .dropDownFind_container .container {
+        transform: translateY(0%);
+    }
+    .dropDownFind_container {
+        margin: 50px 0;
+    }
+    .drop-form {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+    .dropDownFind_container button.btn.primaryBtn {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:750px) and (max-width:990px){
+   
+    .drop__select {
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (max-width:749px){
+    .dropDownFind_container .container {
+        max-width: 380px;
+    }
+    .drop__select {
+        width: calc(100% - 20px);
+    }
+}

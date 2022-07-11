@@ -1,0 +1,153 @@
+.tab__content {
+    display: flex;
+}
+.tab-section {
+    margin: 60px 0;
+}
+.tab-plan-info {
+    padding: 70px;
+    background-color: var(--color-primary);
+    color: #fff;
+    height: 100%;
+}
+.tab-info-wrapper {
+    width: 50%;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.tab-img-wrapper {
+    width: 50%;
+    padding: 0 10px;
+}
+.tab-info-list ul li {
+    list-style: none;
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    line-height: 32px;
+}
+.tab-info-list >ul li:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px dashed;
+    border-color:#fff;
+    z-index: 1;
+}
+.tab-plan-info h2 {
+    margin-bottom: 15px;
+    font-family: 'poppins';
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.tab-plan-info p {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'nunito sans';
+    margin-bottom: 30px;
+} 
+.tab-info-list ul li label {
+    padding-right: 10px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-primary);
+    display: inline-block;
+    text-transform: capitalize;
+}
+.tab-info-list ul li span {
+    float: right;
+    padding-left: 10px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-primary);
+}
+.tab-info-img img {
+    width: 100%;
+}
+.tab__links {
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    justify-content: center;
+}
+.tab__links .tabs {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+    cursor: pointer;
+}
+.active-tab {
+    color: var(--color-primary);
+}
+.tab__contents {
+    display: none;
+}
+.tab__content.active-tab {
+    display: block;
+}
+.tabs:before {
+    position: absolute;
+    content: "";
+    right: 45%;
+    top: 100%;
+    transform: translateY(-40%);
+    height: 1px;
+    width: 1px;
+    background-color: transparent;
+    opacity: 1;
+    border: 3px solid transparent;
+    border-radius: 100%;
+}
+.tabs.active-tab:before {
+    background: var(--color-primary);
+}
+.tabs.active-tab {
+    color: var(--color-primary);
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+.tabs {
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    padding: 1px;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    position: relative;
+}
+
+@media screen and (max-width:990px){
+    .tab__content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .tab-info-wrapper {
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+    .tab-img-wrapper {
+        width: 100%;
+        padding: 0px;
+    }
+    .cus-tab {
+        margin-bottom: 15px;
+    }
+    .tab__links {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .tabs {    
+        margin-right: 20px;
+    }
+
+.tab-plan-info {
+    padding: 20px;
+}
+}

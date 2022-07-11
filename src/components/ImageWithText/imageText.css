@@ -1,0 +1,121 @@
+@keyframes pulse1 {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+    70% {
+      -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  .imagetext-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  .pulse1  {
+    -webkit-animation: pulse1 1s infinite;
+    animation: pulse1 1s infinite;
+  }
+.imageText__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.right--image {
+    position: relative;
+}
+.right--image img {
+    max-width: 100%;
+    height: 100%;
+}
+.left--image {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}  
+.imageText__wrapper > div {
+    flex: 0 0 50%;
+    width: 50%;
+}
+ul.text-container-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+}
+ul.text-container-list li {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+span.ImgText--icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255,239,236);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ImgText--icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-primary);
+}
+.text-container-list p {
+    color: var(--text-color);
+    font-family: 'nunito sans';
+}
+.text__callout {
+    padding: 30px 20px;
+    margin: 30px 20px;
+    border-left: 4px solid;
+    border-color: var(--color-primary);
+    background-color: rgba(255,239,236);
+}
+.text__callout p {
+    color: var(--text-color);
+    line-height: 29px;
+    max-width: 500px;
+}
+.btn-wrapper.text__btn {
+    padding: 0 20px;
+}
+.left--image .videoPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+@media screen and (min-width:991px) and (max-width:1200px){
+.right--image {
+    height: 100%;
+}
+.section-title {
+    font-size: 26px;
+    line-height: 32px;
+}
+}
+@media screen and (max-width:990px){
+    .section-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .left--image {
+        width: 200px;
+    }
+    .imageText__wrapper > div {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .imageText__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

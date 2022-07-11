@@ -1,0 +1,108 @@
+.aminities-wrapper {
+  margin: 100px 0;
+}
+.aminities-icon {
+  width: 100px;
+  height: 100px;
+  line-height: 115px;
+  font-size: 45px;
+  border-radius: 100%;
+  background-color: #fff2f0;
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.animities--box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+.aminities_section {
+  text-align: center;
+  width: calc(25% - 15px);
+  border: none;
+  box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease 0s;
+}
+span.aminities-btn {
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  color: var(--text-color);
+  background-color: #fff;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color-8);
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.aminities_section a {
+  padding: 40px 30px 35px;
+  display: block;
+  position: relative;
+}
+span.aminities-title {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: var(--text-color);
+  transition: all 0.3s ease 0s;
+  margin-bottom: 10px;
+}
+span.aminities-btn {
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  color: var(--text-color);
+  background-color: #fff;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color-8);
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.aminities_section:hover {
+  box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.aminities_section:hover .aminities-title {
+  color: #fff;
+}
+.aminities_section:hover span.aminities-btn {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 750px) and (max-width: 990px) {
+  .animities--box {
+    justify-content: center;
+  }
+  .animities--box > div {
+    width: calc(33% - 15px);
+  }
+  span.aminities-title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .animities--box > div {
+    width: calc(50% - 8px);
+    margin-bottom: 0px;
+  }
+  span.aminities-title {
+    font-size: 16px;
+}
+}

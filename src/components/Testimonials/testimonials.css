@@ -1,0 +1,68 @@
+.testimonials-section {
+    background-image: url("https://tunatheme.com/tf/react/quarter-preview/quarter/assets/img/bg/20.jpg");
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 115px;
+    padding-top: 60px;
+}
+.testimonials-content {
+    background-color: #fff;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    border: 1px solid;
+    border-color: #f1f8ff;
+    position: relative;
+}
+.testimonials-info p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 38px;
+    font-family: 'nunito sans';
+}
+.testimonials__agent .agent-brief.go-top h6 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.testimonials__agent .agent-brief small {
+    font-size: 14px;
+}
+.testimonials__agent .agent-img.go-top {
+    max-width: 60px;
+    margin-right: 15px;
+}
+.testimonias-wrapper .slick-slide {
+    padding: 10px;
+}
+.testimonials-info {
+    padding: 30px 35px 40px;
+}
+.slick-track {
+    display: flex;
+}
+.testimonials-info p svg {
+    height: 24px;
+    width: 24px;
+}
+.testimonials-info:hover svg {
+    fill : var(--color-primary);
+}
+.testimonials-content:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-primary);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+.testimonials-content:hover:before {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}

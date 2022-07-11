@@ -1,0 +1,17 @@
+.video--parallex {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 99;
+   
+}
+.video-section {
+    margin: 100px 0;
+}

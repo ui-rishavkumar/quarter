@@ -1,0 +1,95 @@
+.card-heading .main-heading {
+    text-align: center;
+}
+.main-card {
+    padding: 100px 0;
+    background-color: #f2f6f7;
+}
+.card_section {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.card {
+    margin: 0 10px;
+    background: white;
+    padding: 40px 20px;
+    box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+    border: 1px solid #f6f6f6;
+    position: relative;
+}
+.card-content {
+    display: flex;
+}
+.card-content > div {
+    flex: 0 0 auto;
+    width: 33.33%;
+}
+.card__image {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 1;
+}
+.card-text {
+    text-align: center;
+}
+h3.card-heading {
+    margin-bottom: 15px;
+    font-family: "poppins";
+    color: var(--blue);
+    font-size: 24px;
+}
+.card-text p {
+    color: var(--text-color);
+    line-height: 28px;
+    font-size: 14px;
+}
+a.card__link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: 0.3s all;
+}
+.card:hover a.card__link{
+    color: var(--color-primary);
+}
+.card:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-primary);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (min-width:750px) and (max-width:990px){
+.card_section > div {
+    width: calc(41% - 0px);
+    margin-bottom: 20px;
+}
+.card_section {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-card {
+    padding: 50px 0;
+}
+.featured---card .slick-slide {
+    padding: 5px;
+}
+}
+@media screen and (max-width:749px){
+.card_section > div {
+    width: calc(100% - 0px);
+    margin-bottom: 20px;
+}
+.card_section {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}

@@ -1,0 +1,51 @@
+:root{
+    --color-primary:#ff5a3c;
+    --blue:#071c1f;
+    --text-color:#5c727d;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    list-style: none;;
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width:991px) and (max-width:1200px){
+        .container{
+            max-width:920px;
+            
+        }
+}
+@media screen and (min-width:750px) and (max-width:990px){
+    .container{
+        max-width:720px;
+    }
+     .secondaryBtn ,  .primaryBtn{
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+}
+@media screen and (max-width:749px){
+    .secondaryBtn ,  .primaryBtn{
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+
+}
